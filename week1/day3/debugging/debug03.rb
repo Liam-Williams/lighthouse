@@ -1,9 +1,5 @@
 def sum(list)
-  list.each do |ele|
-    sum = 0
-    sum += ele
-  end
-  sum
+  list.reduce(:+)
 end
 
 list1 = [16,21,31,42,55]
