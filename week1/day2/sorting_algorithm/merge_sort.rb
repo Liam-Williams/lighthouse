@@ -15,7 +15,7 @@ def merge(left, right)
   # empty array
   result = []
 
-  # loops if both left and right is greater than 0
+  # keeps looping if both left and right still has values
   while left.length > 0 && right.length > 0
     # push first array in left if left is greater than right first array
     result << if left[0] <= right[0]
