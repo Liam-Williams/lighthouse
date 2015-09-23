@@ -1,8 +1,11 @@
 def char_count(list)
   letters = {}
+  letters.default = 0
+
   list.each do |word|
     word.split('').each { |letter| letters[letter] += 1 }
   end
+
   letters
 end
 
